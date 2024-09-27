@@ -1,0 +1,63 @@
+#mainBoard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+.box {
+    border: 2px solid #d3d6da;
+    border-radius: 1px;
+    margin: 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.filled-box {
+    border: 2px solid #1e1e1e;
+}
+.white-letter {
+    color: white;
+    border-color: transparent;
+}
+.row {
+    display: flex;
+}
+
+#keyboard-cont {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#keyboard-cont div {
+    display: flex;
+}
+
+.second-row {
+    margin: 0.5rem 0;
+}
+
+.keyboard-button {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.8rem 0.6rem;
+    margin: 0 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #d3d6da;
+    border-color: transparent;
+    border-radius: 2px;
+}
+
+.enter, .delete {
+    font-size: 0.7rem;
+}
