@@ -134,9 +134,7 @@ function checkGuess () {
 
     // Check if the guess was correct
     if (guessString === toGuess) {
-        toastr.success("You guessed right! Game over!");
         guessRemaining = 0;
-        return;
     } else {
         guessRemaining -= 1;
         userGuess = [];
@@ -146,6 +144,11 @@ function checkGuess () {
             toastr.info("You've run out of guesses! Game over!");
             toastr.info(`The right word was: "${toGuess}"`);
         }
+    }
+    
+    if (guessString === toGuess) {
+        setTimeout(() => toastr.success("You guessed right! Game over!", '', {"positionClass": "toast-top-center"}), 2500)
+        return;
     }
 }
 
