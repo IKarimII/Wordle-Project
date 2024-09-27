@@ -7,8 +7,6 @@ let  guessRemaining = guessNum;
 let nextLetterIndex = 0;
 let userGuess = [];
 let toGuess = WTG[Math.floor(Math.random() * WTG.length)];
-toastr.info(toGuess);
-
 
 function BuildBoard() {
     const mainBoard = document.querySelector("#mainBoard");
