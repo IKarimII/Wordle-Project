@@ -1,11 +1,12 @@
 import { WORDS } from "./words.js";
+import { WTG } from "./wordsToGuess.js"
 
 
 const guessNum = 6;
 let  guessRemaining = guessNum;
 let nextLetterIndex = 0;
 let userGuess = [];
-let toGuess = WORDS[Math.floor(Math.random() * WORDS.length)];
+let toGuess = WTG[Math.floor(Math.random() * WTG.length)];
 toastr.info(toGuess);
 
 
